@@ -26,11 +26,20 @@ begin
 end
   ╠═╡ =#
 
+# ╔═╡ 7168fa39-e670-430c-8555-75027a61e5b9
+begin
+	import AbstractPlutoDingetjes
+    using HypertextLiteral
+end
+
+# ╔═╡ 13f7a5bc-4d8c-49ca-8af5-63165d28ca0a
+using PlutoUI
+
+# ╔═╡ eb5185b9-3d70-4096-89a3-3c0caa1a72c7
+using PlutoUI: combine
+
 # ╔═╡ 11410671-d05b-464e-884c-f26283221ce2
 begin
-    import AbstractPlutoDingetjes
-    using HypertextLiteral
-
     struct Knob
         range::AbstractRange{<:Real}
         show_value::Bool
@@ -271,11 +280,10 @@ begin
     end
 end
 
-# ╔═╡ 13f7a5bc-4d8c-49ca-8af5-63165d28ca0a
-using PlutoUI
 
-# ╔═╡ eb5185b9-3d70-4096-89a3-3c0caa1a72c7
-using PlutoUI: combine
+
+# ╔═╡ d32ab575-29b0-4441-b6ce-fd8dc14c58ed
+export Knob
 
 # ╔═╡ e49d941f-a9c8-4403-a08e-ed14e9c44160
 @bind angle Knob(0:5:240, default=0)
@@ -289,9 +297,7 @@ begin
 	md"""
 	Knob1 $(
 		Child(Knob(0:5:240, default=0))
-	) 
-	
-	Knob2 $(
+	) Knob2 $(
 		Child(Knob(0:5:360, default=0))
 	) 
 
@@ -304,11 +310,13 @@ end
 values
 
 # ╔═╡ e78ec4bf-b227-4ec2-9173-ec8deb9abfbf
-export Knob
+
 
 # ╔═╡ Cell order:
 # ╠═6e792942-8532-43f1-a645-28cfa968b2cf
+# ╠═7168fa39-e670-430c-8555-75027a61e5b9
 # ╠═11410671-d05b-464e-884c-f26283221ce2
+# ╠═d32ab575-29b0-4441-b6ce-fd8dc14c58ed
 # ╠═e49d941f-a9c8-4403-a08e-ed14e9c44160
 # ╠═b4fb789c-0ae9-4b0a-ad76-2a94ac5e5b9d
 # ╠═13f7a5bc-4d8c-49ca-8af5-63165d28ca0a

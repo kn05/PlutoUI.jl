@@ -64,6 +64,9 @@ end # ? second
     include("./WideCell.jl")
 end
 
+@reexport module KnobNotebook
+    include("./Knob.jl")
+end
 
 # this is a submodule
 using HypertextLiteral

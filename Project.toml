@@ -1,7 +1,7 @@
 name = "PlutoUI"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-authors = ["Fons van der Plas <fons@plutojl.org>"]
 version = "0.7.78"
+authors = ["Fons van der Plas <fons@plutojl.org>"]
 
 [deps]
 AbstractPlutoDingetjes = "6e696c72-6542-2067-7265-42206c756150"
@@ -17,6 +17,8 @@ InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
 MIMEs = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
 Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 URIs = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
@@ -36,6 +38,8 @@ InteractiveUtils = "1"
 Logging = "1"
 MIMEs = "0.1, 1"
 Markdown = "1"
+Plots = "1.41.4"
+Pluto = "0.20.21"
 Random = "1"
 Reexport = "^1"
 URIs = "1"
